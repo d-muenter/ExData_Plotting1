@@ -1,3 +1,6 @@
+## read in data
+data <- read.table("household_power_consumption.txt", header = TRUE, 
+                   na.strings = "?", sep = ";")
 ## subset data from relevant dates
 data <- rbind(subset(data, Date == "1/2/2007"), subset(data, Date == "2/2/2007"))
 
